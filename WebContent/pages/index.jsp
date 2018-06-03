@@ -5,7 +5,6 @@
 <html>
 	<head>
 
-
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
 		<meta charset="utf-8">
@@ -13,45 +12,16 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 
-		<title>Shop Homepage - Start Bootstrap Template</title>
+		<title>Shop Homepage</title>
 
-		<!-- Bootstrap core CSS -->
 		<link href="pages/resources/css/bootstrap.min.css" rel="stylesheet">
 
-		<!-- Custom styles for this template -->
 		<link href="pages/resources/css/shop-homepage.css" rel="stylesheet">
 	</head>
 	<body>
 
-	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-		<div class="container">
-			<a class="navbar-brand" href="#">Start Bootstrap</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Home
-							<span class="sr-only">(current)</span>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Services</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+    <jsp:include page="template/navigation.jsp" />
 
-	<!-- Page Content -->
 	<div class="container">
 
 		<div class="row">
@@ -66,7 +36,6 @@
 				</div>
 
 			</div>
-			<!-- /.col-lg-3 -->
 
 			<div class="col-lg-9">
 
@@ -196,26 +165,15 @@
 					</div>
 
 				</div>
-				<!-- /.row -->
 
 			</div>
-			<!-- /.col-lg-9 -->
 
 		</div>
-		<!-- /.row -->
 
 	</div>
-	<!-- /.container -->
 
-	<!-- Footer -->
-	<footer class="py-5 bg-dark">
-		<div class="container">
-			<p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
-		</div>
-		<!-- /.container -->
-	</footer>
+    <jsp:include page="template/footer.jsp" />
 
-	<!-- Bootstrap core JavaScript -->
 	<script src="pages/resources/js/jquery-3.3.1.min.js"></script>
 	<script src="pages/resources/js/bootstrap.bundle.min.js"></script>
 

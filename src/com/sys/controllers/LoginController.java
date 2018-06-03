@@ -24,16 +24,16 @@ public class LoginController {
 	@RequestMapping("toLogin")
 	public String toLogin(Model model) {
 		model.addAttribute("credentialsBean", new CredentialsBean());
-		return "pages/login";
+		return "pages/signin";
 	}
 	
 	@RequestMapping("doLogin")
 	public ModelAndView doLogin(@ModelAttribute @Valid CredentialsBean credentials, BindingResult result) {
-		ModelAndView view = new ModelAndView("pages/login");
+		ModelAndView view = new ModelAndView("pages/signin");
 		if(!result.hasFieldErrors()) {
 			UserBean userBean = loginService.authenticate(credentials);
 			if(userBean != null) {
-				view.setViewName("pages/home");
+				view.setViewName("pages/index");
 			} else {
 				result.addError(new ObjectError("err", "Dati non validi"));
 			}
